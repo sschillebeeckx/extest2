@@ -77,6 +77,16 @@ public class Address {
 		this.countryCode = countryCode;
 	}
 
+	@Override
+	public String toString() {
+		return "street='" + street + '\'' +
+				", nr='" + nr + '\'' +
+				", zipCode='" + zipCode + '\'' +
+				", town='" + town + '\'' +
+				", country='" + country + '\'' +
+				", countryCode='" + countryCode + '\'';
+	}
+
 	public boolean checkBelgianZipCode() {
 		boolean isCorrect=false;
 		try {

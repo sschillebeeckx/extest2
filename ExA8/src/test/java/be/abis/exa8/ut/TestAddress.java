@@ -1,6 +1,7 @@
 package be.abis.exa8.ut;
 
 
+
 import be.abis.exa8.model.Address;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,10 +17,12 @@ import static org.junit.Assert.assertTrue;
 public class TestAddress {
 
     Address a;
+
     @Before
     public void setUp(){
         a = new Address("Diestsevest","32 bus 4B","3000","Leuven","Belgium","BE");
     }
+
     @Test
     public void testThatBelgianZipCodeIsNumeric() {
         //arrange
